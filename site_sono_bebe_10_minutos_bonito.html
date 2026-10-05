@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soninho • Rotina de 10 minutos</title>
+<style>
+:root{--ink:#26324f;--muted:#68738f;--purple:#756cf6;--lav:#eeeaff;--white:#fff;--shadow:0 20px 60px rgba(66,54,130,.13)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f8f6ff 0%,#eef7ff 100%);min-height:100vh}
+body:before{content:"";position:fixed;width:280px;height:280px;background:#dcd6ff;border-radius:50%;filter:blur(50px);opacity:.5;top:-100px;right:-80px;z-index:-1}
+body:after{content:"";position:fixed;width:250px;height:250px;background:#c9efff;border-radius:50%;filter:blur(55px);opacity:.5;bottom:-100px;left:-70px;z-index:-1}
+.hero{max-width:1150px;margin:0 auto;padding:28px 22px 70px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0 45px}
+.logo{font-weight:800;font-size:1.15rem;display:flex;gap:9px;align-items:center}
+.logo span{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:var(--white);box-shadow:var(--shadow)}
+.badge{background:rgba(255,255,255,.7);border:1px solid #e6e1ff;padding:9px 15px;border-radius:999px;color:#6259ca;font-size:.86rem;font-weight:700}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
+h1{font-size:clamp(2.7rem,6vw,5rem);line-height:.98;letter-spacing:-3px;margin:15px 0 22px}
+.gradient{background:linear-gradient(90deg,#645de0,#9b72ee);-webkit-background-clip:text;color:transparent}
+.lead{font-size:1.12rem;line-height:1.75;color:var(--muted);max-width:650px}
+.safe{margin-top:25px;display:flex;gap:10px;align-items:flex-start;background:rgba(255,255,255,.75);border:1px solid #e8e4fa;padding:15px 17px;border-radius:18px;color:#5e6880;font-size:.92rem}
+.moon-card{background:linear-gradient(145deg,#25294d,#504d91);border-radius:34px;padding:32px;color:white;box-shadow:0 30px 70px rgba(54,48,113,.25);position:relative;overflow:hidden}
+.moon-card:before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:#fff3ad;right:-35px;top:-30px;box-shadow:0 0 60px #fff3ad}
+.moon{font-size:4.2rem;position:relative;margin-bottom:25px}
+.moon-card h2{font-size:1.7rem;position:relative}.moon-card p{color:#d9d9ef;margin-top:8px;position:relative}
+.container{max-width:1100px;margin:-25px auto 0;padding:0 22px 60px}
+.section-title{text-align:center;margin:25px 0 30px}.section-title h2{font-size:2rem}.section-title p{color:var(--muted);margin-top:7px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.card{background:rgba(255,255,255,.88);border:1px solid #ebe8f7;border-radius:24px;padding:23px;box-shadow:var(--shadow);transition:.25s}
+.card:hover{transform:translateY(-5px)}
+.num{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;background:var(--lav);color:#645bd0;font-weight:900;margin-bottom:18px}
+.card h3{margin-bottom:9px}.card p{color:var(--muted);font-size:.94rem;line-height:1.6}
+.timer{margin-top:24px;background:linear-gradient(135deg,#7269ef,#9c78ed);color:white;border-radius:30px;padding:34px;text-align:center;box-shadow:0 25px 60px rgba(110,95,224,.25)}
+.timer small{opacity:.8}.clock{font-size:5rem;font-weight:800;letter-spacing:3px;margin:4px 0 12px}
+button{border:0;border-radius:13px;padding:12px 20px;font-weight:800;cursor:pointer;margin:4px;background:white;color:#5e56c9;transition:.2s}
+button:hover{transform:scale(1.04)}button.alt{background:rgba(255,255,255,.15);color:white;border:1px solid rgba(255,255,255,.35)}
+.bottom{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.list{list-style:none;margin-top:12px}.list li{padding:10px 0;border-bottom:1px solid #eeeef6;color:var(--muted)}.list li:last-child{border:0}
+footer{text-align:center;padding:25px;color:#7b8499;font-size:.85rem}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.bottom{grid-template-columns:1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.hero{padding-bottom:45px}h1{letter-spacing:-2px}.clock{font-size:3.7rem}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <nav class="nav">
+    <div class="logo"><span>🌙</span> Soninho</div>
+    <div class="badge">ROTINA • 10 MIN</div>
+  </nav>
+  <div class="hero-grid">
+    <div>
+      <div class="badge">Um momento de calma</div>
+      <h1>Hora de<br><span class="gradient">soninho.</span></h1>
+      <p class="lead">Uma rotina simples e tranquila para os minutos antes do sono. O objetivo não é garantir que o bebê durma exatamente em 10 minutos, e sim criar um ambiente previsível e acolhedor.</p>
+      <div class="safe">🛡️ <span><b>Prioridade:</b> sono seguro. Siga sempre as recomendações do pediatra e as orientações de sono seguro para a idade do bebê.</span></div>
+    </div>
+    <div class="moon-card">
+      <div class="moon">🌙</div>
+      <h2>Respire, desacelere.</h2>
+      <p>Ambiente calmo, movimentos suaves e uma rotina repetida podem ajudar o bebê a relaxar.</p>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section-title">
+    <h2>✨ Os 10 minutos</h2>
+    <p>Uma sequência curtinha para deixar a hora de dormir mais tranquila.</p>
+  </section>
+
+  <section class="steps">
+    <article class="card"><div class="num">01</div><h3>Prepare o ambiente</h3><p>Deixe o quarto confortável, silencioso e com iluminação suave. Reduza estímulos.</p></article>
+    <article class="card"><div class="num">02</div><h3>Cuidados rápidos</h3><p>Confira a fralda e coloque uma roupa confortável adequada à temperatura.</p></article>
+    <article class="card"><div class="num">03</div><h3>Acalme</h3><p>Fale baixinho, faça carinho suave e mantenha movimentos lentos e previsíveis.</p></article>
+    <article class="card"><div class="num">04</div><h3>Hora do berço</h3><p>Coloque o bebê no espaço de sono apropriado, seguindo as recomendações de segurança.</p></article>
+  </section>
+
+  <section class="timer">
+    <small>CRONÔMETRO DA ROTINA</small>
+    <div class="clock" id="time">10:00</div>
+    <button onclick="startTimer()">▶ Iniciar</button>
+    <button class="alt" onclick="resetTimer()">↻ Reiniciar</button>
+  </section>
+
+  <section class="bottom">
+    <article class="card"><h2>💜 Para ajudar a relaxar</h2><ul class="list"><li>• Mantenha horários parecidos quando possível.</li><li>• Observe sinais de sono do bebê.</li><li>• Evite brincadeiras muito agitadas perto da hora de dormir.</li><li>• Tenha paciência: cada bebê tem seu ritmo.</li></ul></article>
+    <article class="card"><h2>🛏️ Sono seguro</h2><ul class="list"><li>• Coloque o bebê para dormir de barriga para cima.</li><li>• Use uma superfície firme e plana apropriada.</li><li>• Mantenha o espaço sem travesseiros, objetos macios ou cobertas soltas.</li><li>• Em caso de dúvida, converse com o pediatra.</li></ul></article>
+  </section>
+</main>
+
+<footer>Conteúdo educativo — não substitui orientação médica.</footer>
+
+<script>
+let seconds=600, interval=null;
+function render(){let m=Math.floor(seconds/60).toString().padStart(2,'0');let s=(seconds%60).toString().padStart(2,'0');document.getElementById('time').textContent=m+':'+s}
+function startTimer(){if(interval)return;interval=setInterval(()=>{if(seconds<=0){clearInterval(interval);interval=null;return}seconds--;render()},1000)}
+function resetTimer(){clearInterval(interval);interval=null;seconds=600;render()}
+</script>
+</body>
+</html>
